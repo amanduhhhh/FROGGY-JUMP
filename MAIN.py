@@ -526,6 +526,11 @@ while inPlay:
     #get mouse position for pressing buttons
     for event in pygame.event.get():
 
+        #quitting game
+        if event.type == pygame.QUIT:  # checks x button
+            titleScreen = False
+            inPlay = False
+
         #make sure that the click event is not from the previous screen
         if fromShopClick and event.type == pygame.MOUSEBUTTONUP: 
           fromShopClick = False
@@ -574,7 +579,12 @@ while inPlay:
   while modeSelect:
     setMode()
     for event in pygame.event.get():
+      #quitting game
+      if event.type == pygame.QUIT:  # checks x button
+         modeSelect = False
+         inPlay = False
       if event.type == pygame.MOUSEBUTTONDOWN:
+
         #normal mode
         if checkClick(166, 332, 266, 348) or checkClick(166, 332, 432, 504):
           hardMode = False
@@ -596,6 +606,10 @@ while inPlay:
   while hint:
     setHint()
     for event in pygame.event.get():
+      # quitting game
+      if event.type == pygame.QUIT:  # checks x button
+        hint = False
+        inPlay = False
       #exit button
       if event.type == pygame.MOUSEBUTTONDOWN :
         if checkClick(405, 465, 21, 81):
@@ -609,6 +623,11 @@ while inPlay:
   while shop:
     setShop()
     for event in pygame.event.get():
+      # quitting game
+      if event.type == pygame.QUIT:  # checks x button
+        shop = False
+        inPlay = False
+
       #make sure that the click event is not from the previous screen
       if fromTitleClick and event.type == pygame.MOUSEBUTTONUP:
         fromTitleClick = False
@@ -627,6 +646,13 @@ while inPlay:
     pygame.event.clear()
     clock.tick(FPS)
     setDisplay()
+
+    # quitting game
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:  # checks x button
+            inGame = False
+            inPlay = False
+
     keys = pygame.key.get_pressed()
 
     #setting background: Jenny
@@ -931,7 +957,7 @@ while inPlay:
             
             #if frog hits flying enemies, jump back up
             if currentEnemy == enemyList[0] or currentEnemy == enemyList[1]: 
-                frogVy = JUMP_SPEED           
+                frogVy = JUMP_SPEED
 
     #ending the game
     if frogY>HEIGHT:
@@ -943,6 +969,11 @@ while inPlay:
   while gameOver:
     pygame.event.clear()
     clock.tick(overFPS)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:  # checks x button
+            gameOver = False
+            inPlay = False
     
     keys = pygame.key.get_pressed()
 
