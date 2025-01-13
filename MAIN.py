@@ -14,14 +14,6 @@ WIDTH = 500
 HEIGHT = 800
 gameWindow=pygame.display.set_mode((WIDTH,HEIGHT))
 
-
-#---------------------------------------#
-#BASIC OVERVIEW OF PARTS:               #
-#---------------------------------------#
-#all screens and navigation, score, scrolling background, hard mode, sound effects, and music done by jenny
-#frogs, enemy, platforms, animations done and drawn by amanda
-
-
 #---------------------------------------#
 # functions                             #
 #---------------------------------------#
