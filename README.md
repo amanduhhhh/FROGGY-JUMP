@@ -1,5 +1,5 @@
 # FROGGY-JUMP
-### IMPORTANT: PRESS ESC TO EXIT! the pygame (x) button does not work. 
+IMPORTANT: PRESS ESC TO EXIT! the pygame (x) button does not work. 
 Doodle Jump, but it's a frog. (2022) <br> 
 Video demos for TLDP (too long didn't play): <br>
 Normal Mode: https://drive.google.com/file/d/1Ddu9St_sIxEA2ShO-UiwycOIPRizuj6t/view <br>
