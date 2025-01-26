@@ -1,7 +1,8 @@
 # FROGGY-JUMP
-### Update: pygame (x) button works 
 Doodle Jump, but it's a frog. (2022) <br> 
-Video demos for TLDP (too long didn't play): <br>
+
+--- 
+### Video demos for TLDP (too long didn't play): <br>
 
 🔊 Volume up! <br>
 
